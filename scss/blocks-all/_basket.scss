@@ -1,0 +1,214 @@
+%center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.basketDiv{
+    width: 100%;
+    padding: 25px;
+    @extend %center;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+    margin-bottom: 60px;
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    
+}
+.main_navbar{
+    width: 100%;
+    font-size: 26px;
+    padding: 20px 0px;
+    // height: 40px;
+}
+   .cart_products{
+    width: 70%;
+    padding: 15px 8px;
+    border: solid 0.5px rgb(115, 115, 115);
+    border-radius: 8px;
+    gap: 15px;
+}
+
+.cart_product {
+    @extend %center;
+    justify-content: space-between;
+    padding-right: 15px;
+    margin: 20px 0px;
+    
+    img {
+             width: 100px;
+        height: 100px;
+        margin-right: 20px;
+    }
+}
+.checkbox{
+    width: 18px;
+    height: 18px;
+    padding-left: 5px;
+}
+.cart_product_info{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.cart_product_title{
+    @extend %center;
+    justify-content: space-between;
+    p{
+        font-size: 18px;
+        max-width: 350px;
+    }
+    button{
+        width: 104px;
+        height: 24px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        color: #717171;
+        &:hover{
+            color: #020202;
+        }
+    }
+
+}
+.cart_product_price{
+    @extend %center;
+    justify-content: space-between;
+}
+.product_price_count{
+    @extend %center;
+     gap: 10px;
+     p{
+        color: rgb(74, 74, 74);
+        font-size: 14px;
+      }
+}
+.count{
+    width: 120px;
+    height: 40px;
+    border: 1px solid rgba($color: #000000, $alpha: 0.4);
+    @extend %center;
+    gap: 8px;
+    border-radius: 2px;
+        font-size: 16px;
+    button{
+        width: 30px;
+        height: 30px;
+        border: none;
+        background: transparent;
+    cursor: pointer;
+    }
+   
+}
+.cart__product_price_x{
+    @extend %center;
+    flex-direction: column;
+    
+   align-items: end;
+}
+.product_price1{
+    color: #020202;
+    font-size: 23px;
+    font-weight: 500;
+}
+.product_price2{
+    color: rgb(141, 141, 141);
+    font-size: 13px;
+    text-decoration: line-through;
+}
+.hr{
+    margin: 5px;
+}
+.navbar{
+    width: 100%;
+    @extend %center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.all_checkbox{
+    @extend %center;
+    gap: 5px;
+    font-size: 14px;
+    input{
+        width: 18px;
+        height: 18px;
+    }
+}
+.delivery_time{
+    @extend %center;
+    font-size: 13px;
+    gap: 5px;
+    color: rgb(141, 141, 141);
+}
+.date_of_delivery{
+    border: 1px solid #612bea;
+    font-size: 12px;
+    padding: 4px;
+    border-radius: 3px;
+    color: #612bea;
+}
+.total_price{
+    width: 27%;
+   @extend %center;
+   gap: 15px;
+   align-items: start;
+   flex-direction: column;
+   padding: 15px 8px;
+   border: solid 0.5px rgb(161, 161, 161);
+   border-radius: 8px;
+}
+.delivery{
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.current_price{
+    width: 100%;
+    @extend %center;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.date{
+    width: 100%;
+    @extend %center;
+    font-weight: 600;
+    padding: 4px;
+    color: #612bea;
+    border: 1px solid #612bea;
+}
+.products_total_price{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.last_price{
+    font-size: 23px;
+    font-weight: 600;
+}
+.difference_price{
+    font-size: 12px;
+    color: rgb(4, 212, 4);
+    font-weight: 500;
+}
+.paying_button{
+    width: 95%;
+    align-self: center;
+    height: 40px;
+    background: #612bea;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+}
+  
+  
+  
+  

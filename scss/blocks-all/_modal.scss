@@ -1,0 +1,149 @@
+@import "../veriables.scss";
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    &-content{
+        display: flex;
+        background-color: #fefefe;
+        margin: 30px auto;
+        padding: 35px;
+        border: 1px solid #888;
+        width: 55%;
+        border-radius: 15px;
+        position: relative;
+        &-left{
+            width: 40%;
+            height: 100%;
+            .modal-img{
+                width: 90%;
+            }
+            .information-btn{
+                width: 90%;
+                padding: 10px;
+                background: none;
+                border: 1px solid gray;
+                border-radius: 5px;
+                margin-top: 8px;
+            }
+        }
+        &-right{
+            width: 60%;
+            height: 100%;
+            .modal-title{
+                color: $text-primaty;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28px;
+                margin: 0;
+            }
+            hr{
+                margin-top: 20px;
+            }
+            h4{
+                font-weight: 500;
+                font-size: 14px;
+                color: $text-primaty;
+                line-height: 24px;
+                margin: 8px 0;
+            }
+            .modal-color-img{
+                width: 8%;
+            }
+            .modal-amt{
+                display: flex;
+                width: 114px;
+                border: 1px solid gray;
+                border-radius: 3px;
+                &-minus{
+                    width: 38px;
+                    height: 38px;
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                }
+                &-product{
+                    width: 38px;
+                    height: 38px;
+                    text-align: center;
+                    border: none;
+                }
+                &-plus{
+                    width: 38px;
+                    height: 38px;
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+            .modal-price{
+                color: #1f2026;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 28px;
+                margin-right: 13px;
+                margin: 24px 0;
+            }
+            .modal-part{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                background-color: #f2f4f7;
+                border-radius: 12px;
+                padding: 16px 8px 16px 12px;
+                cursor: pointer;
+                margin-top: 8px;
+                margin-bottom: 26px;
+                .installment-text{
+                    color: #1f2026;
+                    font-size: .875rem;
+                    font-weight: 500;
+                    line-height: 18px;
+                    cursor: pointer;
+                    .per-month{
+                        background-color: #ff0;
+                        border-radius: 8px;
+                        color: #1f2026;
+                        font-weight: 600;
+                        padding: 6px;
+                    }
+                }
+                .installment-icon{
+                    display: flex;
+                    margin-left: auto;
+                    .fa-angle-right{
+                        color: #c6c7cfff;
+                    }
+                }
+            }
+            .modal-part:hover{
+                background-color: #e9ebf0;
+            }
+            .basket-btn{
+                width: 100%;
+                color: white;
+                background-color: #7000ff;
+                border: none;
+                padding: 16px 0;
+                border-radius: 15px;
+                font-size: 17px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
+        .close{
+            position: absolute;
+            border: none;
+            padding: 8px 11px;
+            border-radius: 50%;
+            right: 5px;
+            top: 5px;
+            cursor: pointer;
+        }
+    }
+}

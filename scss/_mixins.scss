@@ -1,0 +1,33 @@
+@mixin brand-button() {
+  font-family: "Space mono", Arial, monospace;
+  color: white;
+  background-color: #fcb72b;
+  padding: 14px 39px;
+  line-height: 25px;
+  font-weight: 700;
+  font-size: 15px;
+  border: 2px solid transparent;
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+    color: #fcb72b;
+    border: 2px solid #fcb72b;
+    transition: all 0.4s ease-in-out;
+    background-color: transparent;
+  }
+}
+
+@mixin header-links() {
+  font-weight: 700;
+  color: $header-links-color;
+  line-height: 25px;
+  font-size: 15px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.6s ease-in-out;
+
+  &:hover {
+    border-bottom: 2px solid $logo-color;
+    transition: all 0.6s ease-in-out;
+    background-color: transparent;
+  }
+}
